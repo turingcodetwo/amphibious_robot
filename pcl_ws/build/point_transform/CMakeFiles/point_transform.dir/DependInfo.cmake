@@ -10,18 +10,31 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DISABLE_DAVIDSDK"
+  "DISABLE_DSSDK"
+  "DISABLE_ENSENSO"
+  "DISABLE_LIBUSB_1_0"
+  "DISABLE_PCAP"
+  "DISABLE_PNG"
+  "DISABLE_RSSDK"
+  "FLANN_STATIC"
   "ROSCONSOLE_BACKEND_LOG4CXX"
   "ROS_BUILD_SHARED_LIBS=1"
   "ROS_PACKAGE_NAME=\"point_transform\""
+  "qh_QHpointer"
+  "vtkDomainsChemistry_AUTOINIT=1(vtkDomainsChemistryOpenGL2)"
+  "vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"
+  "vtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"
+  "vtkRenderingOpenGL2_AUTOINIT=1(vtkRenderingGL2PSOpenGL2)"
+  "vtkRenderingVolume_AUTOINIT=1(vtkRenderingVolumeOpenGL2)"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/include/vtk-7.1"
   "/home/dong/pcl_ws/src/point_transform/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/opt/ros/kinetic/include/opencv-3.3.1-dev"
-  "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
   "/usr/include/eigen3"
   "/usr/include/pcl-1.7"
   "/usr/include/ni"
@@ -36,6 +49,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/jsoncpp"
   "/usr/include/libxml2"
   "/usr/include/tcl"
+  "/usr/local/include/pcl-1.8"
+  "/usr/include/openni2"
   )
 
 # Targets to which this target links.

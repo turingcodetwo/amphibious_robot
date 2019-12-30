@@ -1,4 +1,4 @@
-# 基于kinetic相机的pcl点云变换
+# 基于kinect相机的pcl点云变换
 
 ## 一、代码功能
 

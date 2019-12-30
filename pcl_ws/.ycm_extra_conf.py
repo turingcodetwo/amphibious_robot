@@ -21,8 +21,6 @@ flags = [
 '-isystem',
 '/home/dong/pcl_ws/devel/include',
 '-isystem',
-'/home/dong/pcl_ws/src/CMakeLists.txt/include',
-'-isystem',
 '/home/dong/pcl_ws/src/point_transform/include'
 ]
 
